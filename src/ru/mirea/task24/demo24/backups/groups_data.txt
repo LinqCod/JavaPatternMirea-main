@@ -1,0 +1,78 @@
+Group{
+	groupName='ИКБО-04-20'
+}
+Group{
+	groupName='ИКБО-10-20'
+}
+Group{
+	groupName='IKBO-02-21'
+}
+Group{
+	groupName='ИКБО-05-20'
+}
+Group{
+	groupName='ИКБО-55-20'
+}
+Group{
+	groupName='ИКБО-25-20'
+}
+Group{
+	groupName='ИКБО-94-20'
+}
+Group{
+	groupName='ИКБО-04-20'
+}
+Group{
+	groupName='ИКБО-04-20'
+}
+Group{
+	groupName='ИКБО-05-20'
+}
+Group{
+	groupName='ИКБО-05-20'
+}
+Group{
+	groupName='ИКБО-04-20'
+}
+Group{
+	groupName='ИКБО-04-20'
+}
+Group{
+	groupName='ИКБО-04-20'
+}
+Group{
+	groupName='ИКБО-04-20'
+}
+Group{
+	groupName='ИКБО-04-20'
+}
+Group{
+	groupName='ИКБО-04-20'
+}
+Group{
+	groupName='ИКБО-04-20'
+}
+Group{
+	groupName='ИКБО-04-20'
+}
+Group{
+	groupName='ИКБО-04-20'
+}
+Group{
+	groupName='ИКБО-04-20'
+}
+Group{
+	groupName='ИКБО-04-20'
+}
+Group{
+	groupName='ИКБО-09-20'
+}
+Group{
+	groupName='ИКБО-09-20'
+}
+Group{
+	groupName='ИКБО-09-20'
+}
+Group{
+	groupName='ИКБО-34-20'
+}

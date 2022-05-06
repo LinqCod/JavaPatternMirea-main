@@ -1,0 +1,164 @@
+1293 [background-preinit] INFO  o.h.validator.internal.util.Version
+                – HV000001: Hibernate Validator 6.2.3.Final
+1293 [main] INFO  c.example.demo21.Demo21Application
+                – Starting Demo21Application using Java 15.0.1 on LAPTOP-87654321 with PID 9764 (D:\java\2cource\Exapmle_GUI\JavaPatternMirea\src\ru\mirea\task21\demo21\target\classes started by Ivan in D:\java\2cource\Exapmle_GUI\JavaPatternMirea)
+1302 [main] INFO  c.example.demo21.Demo21Application
+                – No active profile set, falling back to 1 default profile: "default"
+2546 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2658 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Finished Spring Data repository scanning in 95 ms. Found 2 JPA repository interfaces.
+4258 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer
+                – Tomcat initialized with port(s): 8080 (http)
+4266 [main] INFO  o.a.coyote.http11.Http11NioProtocol
+                – Initializing ProtocolHandler ["http-nio-8080"]
+4266 [main] INFO  o.a.catalina.core.StandardService
+                – Starting service [Tomcat]
+4274 [main] INFO  o.a.catalina.core.StandardEngine
+                – Starting Servlet engine: [Apache Tomcat/9.0.60]
+4522 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
+                – Initializing Spring embedded WebApplicationContext
+4522 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext
+                – Root WebApplicationContext: initialization completed in 3122 ms
+4842 [main] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Starting...
+5202 [main] INFO  com.zaxxer.hikari.pool.HikariPool
+                – HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@2ee39e73
+5202 [main] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Start completed.
+5426 [main] INFO  o.h.jpa.internal.util.LogHelper
+                – HHH000204: Processing PersistenceUnitInfo [name: default]
+5862 [main] INFO  org.hibernate.Version
+                – HHH000412: Hibernate ORM core version 5.6.7.Final
+6294 [main] INFO  o.h.annotations.common.Version
+                – HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+6558 [main] INFO  org.hibernate.dialect.Dialect
+                – HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+7846 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator
+                – HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+7870 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
+                – Initialized JPA EntityManagerFactory for persistence unit 'default'
+8710 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration
+                – spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+9814 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver
+                – Exposing 1 endpoint(s) beneath base path '/actuator'
+9894 [main] INFO  o.a.coyote.http11.Http11NioProtocol
+                – Starting ProtocolHandler ["http-nio-8080"]
+9998 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer
+                – Tomcat started on port(s): 8080 (http) with context path ''
+10022 [main] INFO  c.example.demo21.Demo21Application
+                – Started Demo21Application in 9.439 seconds (JVM running for 11.011)
+10722 [RMI TCP Connection(11)-172.17.208.1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
+                – Initializing Spring DispatcherServlet 'dispatcherServlet'
+10723 [RMI TCP Connection(11)-172.17.208.1] INFO  o.s.web.servlet.DispatcherServlet
+                – Initializing Servlet 'dispatcherServlet'
+10726 [RMI TCP Connection(11)-172.17.208.1] INFO  o.s.web.servlet.DispatcherServlet
+                – Completed initialization in 3 ms
+30982 [http-nio-8080-exec-1] INFO  c.e.demo21.services.GroupService
+                – Save group:
+31110 [http-nio-8080-exec-1] INFO  com.example.demo21.AOPAspect
+                – GroupService.createEntity(..)
+31118 [http-nio-8080-exec-1] INFO  com.example.demo21.AOPAspect
+                – Method: createEntity from class com.example.demo21.services.GroupService[Ljava.lang.Object;@5a2ebd79 persist for 128 ms with parametrs{}: [Group{groupName='ИКБО-1999-20'}]
+32040 [task-1] INFO  com.example.demo21.AOPAspect
+                – EmailService.sendNotification(..)
+32040 [task-1] INFO  com.example.demo21.AOPAspect
+                – Method: sendNotification from class com.example.demo21.services.EmailService[Ljava.lang.Object;@7d4994a5 persist for 930 ms with parametrs{}: [Group{groupName='ИКБО-1999-20'}]
+47018 [http-nio-8080-exec-3] INFO  c.e.demo21.services.StudentService
+                – Save student:Student{firstName='gfd', lastName='qwe', middleName='Winston'}
+47042 [http-nio-8080-exec-3] INFO  com.example.demo21.AOPAspect
+                – StudentService.createEntity(..)
+47042 [http-nio-8080-exec-3] INFO  com.example.demo21.AOPAspect
+                – Method: createEntity from class com.example.demo21.services.StudentService[Ljava.lang.Object;@458112fe persist for 40 ms with parametrs{}: [Student{firstName='gfd', lastName='qwe', middleName='Winston'}]
+47925 [task-2] INFO  com.example.demo21.AOPAspect
+                – EmailService.sendNotification(..)
+47925 [task-2] INFO  com.example.demo21.AOPAspect
+                – Method: sendNotification from class com.example.demo21.services.EmailService[Ljava.lang.Object;@5b77714a persist for 883 ms with parametrs{}: [Student{firstName='gfd', lastName='qwe', middleName='Winston'}]
+78741 [http-nio-8080-exec-4] INFO  c.e.demo21.services.StudentService
+                – Save student:Student{firstName='gfd', lastName='qwe', middleName='Winston'}
+78759 [http-nio-8080-exec-4] INFO  com.example.demo21.AOPAspect
+                – StudentService.createEntity(..)
+78759 [http-nio-8080-exec-4] INFO  com.example.demo21.AOPAspect
+                – Method: createEntity from class com.example.demo21.services.StudentService[Ljava.lang.Object;@65bd154d persist for 18 ms with parametrs{}: [Student{firstName='gfd', lastName='qwe', middleName='Winston'}]
+79549 [task-3] INFO  com.example.demo21.AOPAspect
+                – EmailService.sendNotification(..)
+79549 [task-3] INFO  com.example.demo21.AOPAspect
+                – Method: sendNotification from class com.example.demo21.services.EmailService[Ljava.lang.Object;@62a4c78d persist for 790 ms with parametrs{}: [Student{firstName='gfd', lastName='qwe', middleName='Winston'}]
+82479 [http-nio-8080-exec-6] INFO  c.e.demo21.services.StudentService
+                – Save student:Student{firstName='gfdjhgj', lastName='qwe', middleName='Winston'}
+82523 [http-nio-8080-exec-6] INFO  com.example.demo21.AOPAspect
+                – StudentService.createEntity(..)
+82523 [http-nio-8080-exec-6] INFO  com.example.demo21.AOPAspect
+                – Method: createEntity from class com.example.demo21.services.StudentService[Ljava.lang.Object;@53b3f4c3 persist for 44 ms with parametrs{}: [Student{firstName='gfdjhgj', lastName='qwe', middleName='Winston'}]
+83430 [task-4] INFO  com.example.demo21.AOPAspect
+                – EmailService.sendNotification(..)
+83430 [task-4] INFO  com.example.demo21.AOPAspect
+                – Method: sendNotification from class com.example.demo21.services.EmailService[Ljava.lang.Object;@7aef97be persist for 907 ms with parametrs{}: [Student{firstName='gfdjhgj', lastName='qwe', middleName='Winston'}]
+110545 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
+                – Closing JPA EntityManagerFactory for persistence unit 'default'
+110553 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Shutdown initiated...
+110569 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Shutdown completed.
+1519 [background-preinit] INFO  o.h.validator.internal.util.Version
+                – HV000001: Hibernate Validator 6.2.3.Final
+1519 [main] INFO  c.example.demo21.Demo21Application
+                – Starting Demo21Application using Java 15.0.1 on LAPTOP-87654321 with PID 11232 (D:\java\2cource\Exapmle_GUI\JavaPatternMirea\src\ru\mirea\task21\demo21\target\classes started by Ivan in D:\java\2cource\Exapmle_GUI\JavaPatternMirea)
+1523 [main] INFO  c.example.demo21.Demo21Application
+                – No active profile set, falling back to 1 default profile: "default"
+2929 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+3055 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Finished Spring Data repository scanning in 110 ms. Found 2 JPA repository interfaces.
+4764 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer
+                – Tomcat initialized with port(s): 8080 (http)
+4772 [main] INFO  o.a.coyote.http11.Http11NioProtocol
+                – Initializing ProtocolHandler ["http-nio-8080"]
+4780 [main] INFO  o.a.catalina.core.StandardService
+                – Starting service [Tomcat]
+4780 [main] INFO  o.a.catalina.core.StandardEngine
+                – Starting Servlet engine: [Apache Tomcat/9.0.60]
+4988 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
+                – Initializing Spring embedded WebApplicationContext
+4988 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext
+                – Root WebApplicationContext: initialization completed in 3364 ms
+5316 [main] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Starting...
+5693 [main] INFO  com.zaxxer.hikari.pool.HikariPool
+                – HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@54c60202
+5701 [main] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Start completed.
+5893 [main] INFO  o.h.jpa.internal.util.LogHelper
+                – HHH000204: Processing PersistenceUnitInfo [name: default]
+5973 [main] INFO  org.hibernate.Version
+                – HHH000412: Hibernate ORM core version 5.6.7.Final
+6189 [main] INFO  o.h.annotations.common.Version
+                – HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+6359 [main] INFO  org.hibernate.dialect.Dialect
+                – HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+7282 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator
+                – HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+7298 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
+                – Initialized JPA EntityManagerFactory for persistence unit 'default'
+8028 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration
+                – spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+9022 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver
+                – Exposing 1 endpoint(s) beneath base path '/actuator'
+9094 [main] INFO  o.a.coyote.http11.Http11NioProtocol
+                – Starting ProtocolHandler ["http-nio-8080"]
+9166 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer
+                – Tomcat started on port(s): 8080 (http) with context path ''
+9198 [main] INFO  c.example.demo21.Demo21Application
+                – Started Demo21Application in 8.508 seconds (JVM running for 10.226)
+9438 [RMI TCP Connection(3)-172.17.208.1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
+                – Initializing Spring DispatcherServlet 'dispatcherServlet'
+9438 [RMI TCP Connection(3)-172.17.208.1] INFO  o.s.web.servlet.DispatcherServlet
+                – Initializing Servlet 'dispatcherServlet'
+9446 [RMI TCP Connection(3)-172.17.208.1] INFO  o.s.web.servlet.DispatcherServlet
+                – Completed initialization in 8 ms
+24395 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
+                – Closing JPA EntityManagerFactory for persistence unit 'default'
+24395 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Shutdown initiated...
+24411 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Shutdown completed.

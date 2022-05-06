@@ -1,0 +1,4 @@
+https://habr.com/ru/post/482552/+видос на 5 часов
+
+для хранения сессий - одну строчку добавил в app.properties - store=jdbc
+https://www.baeldung.com/spring-session-jdbc

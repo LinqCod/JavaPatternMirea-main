@@ -1,0 +1,46 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+group 'org.example'
+version '1.0'
+
+repositories {
+    mavenCentral()
+}
+
+mainClassName = 'org.example.Task.Main'
+
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-configuration-processor:2.6.3'
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.6.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine'
+}
+
+test {
+    useJUnitPlatform()
+}
+
+jar {
+    manifest {
+        attributes 'Main-Class': 'org.example.Task.Main'
+    }
+}
+
+
+task task1 {
+    task1.dependsOn jar
+    copy {
+        from jar
+        into 'DockerfilePlace'
+    }
+    finalizedBy {
+        Docker
+    }
+}
+
+task Docker(type: Exec) {
+    commandLine "docker", "build", "-t", "${project.name}:${project.version}", "."
+    commandLine "docker", "run", "-t", "docker.io/library/${project.name}:${project.version}"
+}
